@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing : border-box;
+}
+
+body{
+    color : white;
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_960_720.jpg');
+    font-family : 'Poppins', sans-serif;
+    background-size : cover;
+    background-position : center center;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    min-height : max-content;
+    margin : 0;
+}
+
+h1{
+    font-size : 4rem;
+    margin-top : 5rem;
+    color : rgb(219, 219, 213);
+    margin-bottom : 130px;
+}
+#dateForm{
+    margin-bottom : 50px;
+    border-radius : 5px;
+}
+#dateInput{
+    border-radius : 5px;
+}
+#dateButton{
+    border-radius : 5px;
+    background-color : white;
+    font-weight: bold;
+    font-style:italic;
+}
+
+.big-text{
+    margin : 0;
+    font-size : 4rem;
+    line-height : 1;
+    font-weight : bold;
+    color : rgb(219, 219, 213);
+
+}
+
+.countdownEl{
+    text-align : center;
+}
+.countdownEl span{
+    font-size : 1.1rem;
+    padding : 3rem;
+}
+.countdown_container{
+    display : flex;
+}

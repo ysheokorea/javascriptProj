@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body{
+    background-image : url("https://cdn.pixabay.com/photo/2014/05/22/16/52/pyrenees-351266_960_720.jpg");
+    background-size : cover;
+    background-position : center center;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    min-height : 100vh;
+    margin : 0;
+    font-family : 'Poppins', sans-serif;
+}
+h1{
+    font-size : 4rem;
+    margin-top : 5rem;
+    color : rgba(122, 118, 118, 0.63);
+}
+.countdown-container{
+    display : flex;
+}
+.big-text{
+    margin : 0 2rem;
+    font-size : 1rem;
+    line-height : 1;
+    font-weight : bold;
+}
+
+.countdown-el{
+    text-align : center;
+}
+.countdown-el span{
+    font-size : 1.1rem;
+}

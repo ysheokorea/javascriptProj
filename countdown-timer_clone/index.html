@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdwon Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Time Countdown</h1>
+    <form action="" method="POST">
+        <input id='dateInput' type="text" name='tempInput'>
+        <input id='dateButton' type="button" value='start' onclick="
+           setTimer(this.form);
+        ">
+        <!-- 
+            여기서 form에서 value를 입력하고 javascript로 값을 보내서
+            totalSeconds값을 받으려고 하는데, 안된다.
+            1) countDown()으로 parameter가 안넘어감
+            2) countDown()안에서 onclick()을 실행하면 countdown이 안됨
+            3) 무슨 키워드로 검색해야 할지 모르겠음 ;;
+            ->> 해결
+            
+         -->
+    </form>    
+        
+        
+    
+    
+    <div class="countdown_container">
+        <div class="countdownEl days-c">
+            <p class="big-text" id="days">0</p>
+            <span>days</span>
+        </div>
+        <div class="countdownEl hours-c">
+            <p class="big-text" id="hours">0</p>
+            <span>hours</span>
+        </div>
+        <div class="countdownEl mins-c">
+            <p class="big-text" id="mins">0</p>
+            <span>mins</span>
+        </div>
+        <div class="countdownEl seconds-c">
+            <p class="big-text" id="seconds">0</p>
+            <span>seconds</span>
+        </div>
+    </div>
+</body>
+</html>

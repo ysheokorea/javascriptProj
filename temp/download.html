@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width : 800px;
+            height : 500px;
+            display : flex;
+            flex-direction : column;
+        }
+        textarea{
+            height : 50%;
+        }
+        button {
+            width : 90%;
+            height : 10%;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            margin-left : 5%;
+            margin-right : 5%;
+            font-weight : bold;
+            font-size : 20px;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <div>
+        <textarea></textarea>
+        <button></button>
+        
+        
+    </div>
+    
+
+    <script>    
+        const button = document.querySelector('button');
+        const FILE_URL = "/temp/test.pdf"
+        const FILE_NAME = "Dianasour"
+        button.addEventListener('click', function(e){
+            e.preventDefault();
+            // var textarea = document.querySelector('textarea').value;
+            // var filename = 'output.txt';
+            // download('temp/output(1).txt');
+            download(FILE_URL,FILE_NAME);
+        });
+
+        // async function downloadImage(imageSrc){
+        //     const image = await fetch(imageSrc);
+        //     const imageBlob = await image.blob();
+        //     const imageUrl = URL.createObjectURL(imageBlob);
+
+        //     const link = document.createElement('a');
+        //     link.setAttribute('href', imageUrl);
+        //     link.setAttribute('download', 'movies_image');
+        //     document.body.appendChild(link);
+        //     link.click();
+        //     document.body.removeChild(link);
+        // }
+        // // function download(textarea, filename){
+        // //     var element = document.createElement('a');
+        // //     element.setAttribute('href','data:text/plain; charset=utf8,'+encodeURIComponent(textarea));
+        // //     element.setAttribute('download', filename);
+        // //     document.body.appendChild(element);
+        // //     element.click();
+        // //     document.body.removeChild(element);
+        // // }
+        function download(fileUrl, fileName){
+            var element = document.createElement('a');
+            element.setAttribute('href', fileUrl);
+            element.setAttribute('download', fileName);
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+        }
+    </script>
+</body>
+</html>

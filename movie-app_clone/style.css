@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing : border-box;
+}
+
+body{
+    font-family : 'Poppins', sans-serif;
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+}    
+h1{
+    text-align: center;
+    color :rgba(50, 54, 63, 0.671)
+}
+header{
+    height : 50px;
+}
+
+header input{
+    height : 80%;
+    width : 80%;
+    display : flex;
+    justify-content: center;
+    background-color : #7ee8fa;
+    border-color : rgba(128, 128, 128, 0.247);
+    border-radius : 20px;
+}
+header input:focus{
+    background-color :rgb(8, 29, 73);
+    color : white;
+}
+
+header input:hover{
+    font-size : 50%;
+}
+
+header input::placeholder{
+    text-align: center;
+    font-size : 100%;
+}
+
+
+.content-container{
+    display:flex;
+    flex-wrap : wrap;
+}
+
+.movie{
+    background-color : rgb(8, 29, 73);
+    width : 300px;
+    height : 500px;
+    margin : 10px;
+    padding : 10px;
+    position : relative;
+}
+
+#movie_img{
+    background-color : white;
+    width : 100%;
+    height : 85%;
+}
+.movie img{
+    width : 100%;
+    
+}
+
+#movie_info{
+    background-color : rgb(167, 196, 139);
+    width : 100%;
+    height : 10%;
+    border-radius : 10px;
+    display : flex;
+    justify-content: space-between;
+    font-size : 80%;
+}
+
+span{
+    height : 80%;    
+    padding : 1%;    
+    font-weight : bold;
+}
+
+span #title{
+    font-family: inherit;
+    display : flex;
+    justify-content : center;
+}
+
+#vote_average_green{
+    background-color : green;
+    border-radius : 50px;
+    font-family: inherit;
+    display : flex;
+    justify-content : center;
+}
+#vote_average_yellow{
+    background-color : yellow;
+    border-radius : 50px;
+    font-family: inherit;
+    display : flex;
+    justify-content : center;
+}
+#vote_average_red{
+    background-color : red;
+    border-radius : 50px;
+    font-family: inherit;
+    display : flex;
+    justify-content : center;
+}
+
+
+
